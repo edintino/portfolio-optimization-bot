@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Portfolio Optimization Bot</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>How the Portfolio Optimization Bot Works</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="parameters.html">Parameters</a></li>
+        <li><a href="backtesting.html">Backtesting & Results</a></li>
+        <li><a href="usage.html">Usage & Examples</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2>Reaching Portfolio Nirvana</h2>
+    <p>To optimize a portfolio, we take a unique approach. Using genetic algorithms, we evaluate and refine combinations of stocks, aiming to reach an ideal distribution of assets. Here’s how it works:</p>
+
+    <h3>Genetic Algorithm Optimization</h3>
+    <p>Inspired by natural selection, the genetic algorithm refines portfolio distributions. We simulate generations of portfolio combinations, selecting those that perform best based on metrics like Sortino Ratio or Sharpe Ratio, until we find the best possible balance.</p>
+
+    <h3>Strategy Selection</h3>
+    <p>We identify the top-performing tickers based on recent performance, such as price increases over the past 90 days, recalculating every 30 days to keep up with market trends. Once we have our ticker list, the algorithm rebalances the portfolio to achieve the desired metric (e.g., minimize risk or maximize return).</p>
+
+    <h3>Rebalancing and Portfolio Optimization</h3>
+    <p>Periodically, we update the chosen tickers and redistribute capital based on performance data from the past 365 days. This allows the bot to adjust its strategy dynamically, ensuring your portfolio remains optimized over time.</p>
+</div>
+
+<footer>
+    <p>&copy; 2023 Portfolio Optimization Bot</p>
+</footer>
+
+</body>
+</html>
