@@ -2,43 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How It Works - Portfolio Optimization Bot</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <!-- Navigation Menu -->
+        <nav class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About the Bot</a></li>
+                <li><a class="active" href="how-it-works.html">How It Works</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+            </ul>
+        </nav>
 
-<header>
-    <h1>How the Portfolio Optimization Bot Works</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="how-it-works.html">How It Works</a></li>
-        <li><a href="parameters.html">Parameters</a></li>
-        <li><a href="backtesting.html">Backtesting & Results</a></li>
-        <li><a href="usage.html">Usage & Examples</a></li>
-    </ul>
-</nav>
-
-<div class="container">
-    <h2>Reaching Portfolio Nirvana</h2>
-    <p>To optimize a portfolio, we take a unique approach. Using genetic algorithms, we evaluate and refine combinations of stocks, aiming to reach an ideal distribution of assets. Here’s how it works:</p>
-
-    <h3>Genetic Algorithm Optimization</h3>
-    <p>Inspired by natural selection, the genetic algorithm refines portfolio distributions. We simulate generations of portfolio combinations, selecting those that perform best based on metrics like Sortino Ratio or Sharpe Ratio, until we find the best possible balance.</p>
-
-    <h3>Strategy Selection</h3>
-    <p>We identify the top-performing tickers based on recent performance, such as price increases over the past 90 days, recalculating every 30 days to keep up with market trends. Once we have our ticker list, the algorithm rebalances the portfolio to achieve the desired metric (e.g., minimize risk or maximize return).</p>
-
-    <h3>Rebalancing and Portfolio Optimization</h3>
-    <p>Periodically, we update the chosen tickers and redistribute capital based on performance data from the past 365 days. This allows the bot to adjust its strategy dynamically, ensuring your portfolio remains optimized over time.</p>
-</div>
-
-<footer>
-    <p>&copy; 2023 Portfolio Optimization Bot</p>
-</footer>
-
+        <!-- Main Content -->
+        <main class="content">
+            <h1>How Does It Work?</h1>
+            <h2>Overview</h2>
+            <p>
+                The bot uses a type of artificial intelligence called a <strong>genetic algorithm</strong> to find the best way to allocate your investment across different stocks. Genetic algorithms mimic the process of natural selection to solve optimization problems.
+            </p>
+            <h2>Steps</h2>
+            <ol>
+                <li>
+                    <strong>Data Collection</strong>: The bot gathers historical price data for a selection of stocks, typically from the S&P 500 index.
+                </li>
+                <li>
+                    <strong>Parameter Setting</strong>: You define parameters like investment amount, start date, and how often to adjust the portfolio.
+                </li>
+                <li>
+                    <strong>Portfolio Optimization</strong>:
+                    <ul>
+                        <li><em>Initialization</em>: Generates a population of random portfolios (possible solutions).</li>
+                        <li><em>Evaluation</em>: Calculates the performance of each portfolio using your chosen metric (e.g., maximizing return or minimizing risk).</li>
+                        <li><em>Selection</em>: Selects the best-performing portfolios.</li>
+                        <li><em>Crossover and Mutation</em>: Combines aspects of selected portfolios to create new ones and introduces random changes for diversity.</li>
+                        <li><em>Iteration</em>: Repeats the evaluation and selection process over several generations to improve the portfolios.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Backtesting</strong>: The bot tests the optimized portfolio against historical data to see how it would have performed.
+                </li>
+                <li>
+                    <strong>Results Presentation</strong>: Provides you with the final recommended portfolio allocation, performance metrics, and comparison with a uniform portfolio.
+                </li>
+            </ol>
+            <h2>Getting Started</h2>
+            <p>Ready to optimize your portfolio? Here's how to get started:</p>
+            <ol>
+                <li><strong>Set Your Parameters</strong>: Decide on your investment amount, start date, and preferences.</li>
+                <li><strong>Run the Bot</strong>: Input your parameters into the bot and let it perform the optimization.</li>
+                <li><strong>Review the Results</strong>: Examine the recommended portfolio allocation, performance metrics, and comparison plots.</li>
+                <li><strong>Implement Your Strategy</strong>: Use the insights gained to make informed investment decisions.</li>
+            </ol>
+        </main>
+    </div>
 </body>
 </html>
