@@ -24,11 +24,11 @@
             <p>
                 To showcase the capabilities of the Portfolio Optimization Bot, here are some example scenarios demonstrating how different parameters can influence investment outcomes.
             </p>
-            <h2>Example 1: Maximizing Return</h2>
+            <h2>Example 1: Maximizing Sortino Ratio</h2>
             <p><strong>Parameters:</strong></p>
             <ul>
-                <li><strong>Investment Day</strong>: January 1, 2022</li>
-                <li><strong>Optimization Metric</strong>: Maximize Return</li>
+                <li><strong>Investment Day</strong>: December 16, 2014</li>
+                <li><strong>Optimization Metric</strong>: Sortino Ratio</li>
                 <li><strong>Portfolio Optimization Interval</strong>: Every 30 days</li>
                 <li><strong>Optimization History</strong>: Using past 365 days of data</li>
                 <li><strong>Top N Stocks</strong>: 25 highest-performing stocks</li>
@@ -38,19 +38,41 @@
             </ul>
             <h3>Results:</h3>
             <ul>
-                <li><strong>Final Optimized Portfolio Value</strong>: $2,679.22</li>
-                <li><strong>Total Return (Optimized)</strong>: 167.92%</li>
-                <li><strong>Final Uniform Portfolio Value</strong>: $1,945.78</li>
-                <li><strong>Total Return (Uniform)</strong>: 94.58%</li>
+                <li><strong>Final Optimized Portfolio Value</strong>: $20,113.07</li>
+                <li><strong>Total Return (Optimized)</strong>: 1,913.31%</li>
+                <li><strong>SP500 Value</strong>: $3,274.72</li>
+                <li><strong>Total Return (SP500)</strong>: 227.47%</li>
             </ul>
             <p>
-                The optimized portfolio significantly outperformed the uniform portfolio, nearly doubling the total return. This demonstrates the bot's ability to identify high-return opportunities by strategically allocating funds based on historical performance and optimization algorithms.
+                The optimized portfolio significantly outperformed SP500, nearly 10 times the total return. This demonstrates the bot's ability to identify high-return opportunities by strategically allocating funds based on historical performance and optimization algorithms.
             </p>
             <h3>Performance Plot:</h3>
-            <img src="images/portfolio_performance_example1.png" alt="Portfolio Performance Over Time">
+            <img src="images/sortino_optimization.png" alt="Portfolio Performance Over Time">
+
+            <h2>Example 2: Maximizing Return</h2>
+            <p><strong>Parameters:</strong></p>
+            <ul>
+                <li><strong>Investment Day</strong>: December 16, 2014</li>
+                <li><strong>Optimization Metric</strong>: Sortino Ratio</li>
+                <li><strong>Portfolio Optimization Interval</strong>: Every 30 days</li>
+                <li><strong>Optimization History</strong>: Using past 365 days of data</li>
+                <li><strong>Top N Stocks</strong>: 25 highest-performing stocks</li>
+                <li><strong>Ticker Update Interval</strong>: Every 90 days</li>
+                <li><strong>Initial Capital</strong>: $1,000</li>
+                <li><strong>Transaction Cost Rate</strong>: 0.1% (0.001)</li>
+            </ul>
+            <h3>Results:</h3>
+            <ul>
+                <li><strong>Final Optimized Portfolio Value</strong>: $27,861.11</li>
+                <li><strong>Total Return (Optimized)</strong>: 2,686.11%</li>
+                <li><strong>SP500 Value</strong>: $3,274.72</li>
+                <li><strong>Total Return (SP500)</strong>: 227.47%</li>
+            </ul>
             <p>
-                The graph illustrates the growth of both portfolios over the investment period. The optimized portfolio (blue line) shows a steeper upward trajectory compared to the uniform portfolio (orange line).
+                The optimized portfolio significantly outperformed SP500, nearly 10 times the total return. This demonstrates the bot's ability to identify high-return opportunities by strategically allocating funds based on historical performance and optimization algorithms.
             </p>
+            <h3>Performance Plot:</h3>
+            <img src="images/sortino_optimization.png" alt="Portfolio Performance Over Time">
         </main>
     </div>
 </body>
